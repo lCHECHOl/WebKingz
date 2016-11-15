@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>WebKingz - Contacto</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="animate.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="shortcut icon" href="3.ico">
+	<script>
+$(document).ready(function(){
+    $(":reset").css("background-color", "red");
+});
+</script>
+</head>
+<body>
+	<div class="oscurecer">
+	<header>
+		<nav id="header-top" class="navbar navbar-inverse navbar-static-top principal animated bounceInDown" role="navigation">
+			<div class="container principal">
+				<div class="navbar-header principal">
+					<button type="button" class="navbar-toggle collapsed principal" data-toggle="collapse" data-target="#navegacion-fm" aria-expanded="false">
+						<span class="sr-only principal">Toggle navigation</span>
+						<span class="icon-bar principal"></span>
+						<span class="icon-bar principal"></span>
+						<span class="icon-bar principal"></span>
+					</button>
+					<a href="index.html" class="navbar-brand principal"><img src="wbz.png" width="30px" height="19px" class="animated infinite bounce">Web Kingz</a>
+				</div>
+				<!-- Inicia Menu -->
+				<div class="collapse navbar-collapse navbar-right" id="navegacion-fm">
+					<ul class="nav navbar-nav principal">
+						<li><a href="index.html">Inicio <span class="glyphicon glyphicon-home"></span></a></li>
+						<li><a href="servicios.html">Servicios <span class="glyphicon glyphicon-globe"></span></a></li>
+						<li><a href="cotizar.html">Cotizar <span class="glyphicon glyphicon-usd"></span></a></li>
+						<li><a href="qs.html">Quienes somos <span class="glyphicon glyphicon-info-sign"></span></a></li>
+						<li class="active principal"><a href="contacto.html">Contacto <span class="glyphicon glyphicon-earphone"></span></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="principal contenedor  animated bounceInRight">
+		<article><br>
+			<form method="post" class="contacto">
+        <fieldset>
+            <div><label>Nombre:</label><input type="text" class="nombre" name="nombre" /></div>
+            <div><label>Email:</label><input type="text" class="correo" name="correo" /></div>
+            <div><label>Telefono:</label><input type="text" class="telefono" name="telefono" /></div>
+            <div><label>Mensaje:</label><textarea cols="30" rows="5" class="mensaje" name="mensaje" ></textarea></div>
+            <div class="ultimo">
+                <div class="msg"></div>
+                <button class="boton_envio" onclick="conexion()">Enviar Mensaje</button>
+            </div>
+        </fieldset>
+     </form>
+<!-- mapa -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1ses!2ses!4v1478620176125!6m8!1m7!1sJNUC5qroyu_tL87_WUZPSw!2m2!1d5.0668661727412!2d-75.49560163015181!3f288.50164280334405!4f-19.854503283590546!5f0.7820865974627469" width="250" height="250" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+
+
+		</article>
+</div>
+
+
+	<footer>
+		<div class="container principal">
+			<hr>
+			<center>
+				<h2><p>Desarrollado por: </p>Web Kingz ©</h2>
+		</center>
+		<hr>
+		</div>
+	</footer>
+</div>
+
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="menufijo.js"></script>
+	<script src="main.js"></script>
+	<script>app.init();	</script>
+</body>
+</html>
